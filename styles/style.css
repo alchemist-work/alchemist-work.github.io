@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+.settings label {
+    margin-right: 10px;
+}
+
+.settings select {
+    margin-right: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#suggestions {
+    position: absolute;
+    top: 50px; /* Adjusted to account for the input box and button */
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    text-align: left; /* Ensure left alignment */
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
